@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "gtd"
+version = "0.1.0"
+description = "A command line todo app for Getting Things Done."
+authors = ["Alex Hendrie Bielen <alexhendriebielen@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.3"
+rich = "^12.5.1"
+tortoise-orm = {extras = ["aiosqlite"], version = "^0.19.2"}
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+flake8 = "^5.0.4"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.8.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
